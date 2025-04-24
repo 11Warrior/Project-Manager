@@ -49,12 +49,12 @@ const SignUp = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen ">
+    <div className="flex items-center justify-center min-h-screen  outline-none ">
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-md  p-8 rounded-lg "
+        className="w-full max-w-md  p-8 rounded-lg outline-none "
       >
-        <h2 className="text-3xl font-bold mb-6 text-center text-cyan-600">Create Account</h2>
+        <h2 className="text-3xl font-bold mb-6 text-center text-blue-600">Sign Up</h2>
 
         <div className="mb-4">
           <label className="block text-sm text-white font-medium mb-1">Full Name</label>
@@ -63,7 +63,7 @@ const SignUp = () => {
             name="fullName"
             value={formData.fullName}
             onChange={handleChange}
-            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400"
+            className="w-full border border-gray-300 rounded px-3 py-2 "
             placeholder="Name"
             required
           />
@@ -76,7 +76,7 @@ const SignUp = () => {
             name="userName"
             value={formData.userName}
             onChange={handleChange}
-            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400"
+            className="w-full border border-gray-300 rounded px-3 py-2 "
             placeholder="example123"
             required
           />
@@ -89,7 +89,7 @@ const SignUp = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400"
+            className="w-full border border-gray-300 rounded px-3 py-2 "
             placeholder="email@example.com"
             required
           />
@@ -103,7 +103,7 @@ const SignUp = () => {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded px-3 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-amber-400"
+              className="w-full border border-gray-300 rounded px-3 py-2 pr-10 "
               placeholder="••••••"
               required
             />
@@ -118,14 +118,14 @@ const SignUp = () => {
 
         <button
           type="submit"
-          className="w-full bg-amber-400 hover:bg-amber-500 transition-colors text-white py-2 rounded font-semibold mt-4"
-        >
-          Sign Up
+          className="w-full bg-emerald-400 hover:bg-emerald-600 cursor-pointer transition-colors text-white py-2 rounded font-semibold mt-4"
+        > <strong>
+          Sign Up</strong>
         </button>
 
         <p className="text-center text-sm text-gray-600 mt-4">
           Already have an account?{" "}
-          <a href="/login" className="text-amber-500 font-medium hover:underline">
+          <a href="/login" className="text-blue-500 font-medium hover:underline">
             Login
           </a>
         </p>

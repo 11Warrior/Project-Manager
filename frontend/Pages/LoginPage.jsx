@@ -61,8 +61,8 @@ const LoginPage = () => {
         onSubmit={handleSubmit}
         className=" rounded-lg px-8 pt-8 pb-10 w-full max-w-md"
       >
-        <h2 className="text-3xl font-bold mb-6 text-center text-lime-500">
-          Welcome Back 👋
+        <h2 className="text-3xl font-bold mb-6 text-center text-white">
+          Login
         </h2>
 
         <div className="mb-4">
@@ -74,7 +74,7 @@ const LoginPage = () => {
             value={formData.userName}
             onChange={handleChange}
             required
-            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400"
+            className="w-full border border-gray-300 rounded px-3 py-2 "
           />
         </div>
 
@@ -88,7 +88,7 @@ const LoginPage = () => {
               value={formData.password}
               onChange={handleChange}
               required
-              className="w-full border border-gray-300 rounded px-3 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-amber-400"
+              className="w-full border border-gray-300 rounded px-3 py-2 pr-10 "
             />
             <span
               className="absolute right-3 top-2 text-sm text-gray-500 cursor-pointer"
@@ -102,7 +102,7 @@ const LoginPage = () => {
         <button
           type="submit"
           disabled={isPending}
-          className="w-full bg-amber-400 hover:bg-amber-500 text-shadow-green-500 font-semibold py-2 rounded transition-colors duration-200"
+          className="w-full bg-violet-600 hover:bg-purple-600 text-black cursor-pointer font-semibold py-2 rounded transition-colors duration-200"
         >
           {isPending ? "Logging in..." : "Login"}
         </button>
@@ -111,7 +111,7 @@ const LoginPage = () => {
           Don’t have an account?{" "}
           <a
             href="/signup"
-            className="text-amber-500 font-medium hover:underline"
+            className="text-blue-500 font-medium hover:underline"
           >
             Sign Up
           </a>
